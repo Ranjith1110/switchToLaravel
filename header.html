@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A.M College of Engineering</title>
+    <link href="./assets/images/web-title-logo.png" rel="icon" />
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fastbootstrap.min.css">
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <style>
+        /* Glassmorphism background */
+        .modal-content {
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+        }
+
+        /* Glassmorphic input fields */
+        .form-control,
+        .form-select {
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 1rem;
+            color: #000;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: rgba(211, 32, 50, 0.5);
+            box-shadow: 0 0 8px rgba(232, 39, 58, 0.5);
+            outline: none;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            /* background-color: transparent; */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .scrolled {
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .scrolled .nav-link {
+            color: #000 !important;
+        }
+
+        @media (max-width: 769px) {
+            .navbar {
+                background: #fff;
+            }
+
+        }
+    </style>
+
+</head>
+
+    <!-- Top Navbar Start here -->
+    <div class="container-fluid fixed-top p-0" style="background-color: #dfcfc1;">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="fa-solid fa-graduation-cap text-black fs-5 me-2"></small>
+                    <small class="text-black fs-4 fw-bold">Counselling Code : 3810</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fas fa-phone-alt text-black me-2"></small>
+                    <small class="text-black">+91 9952522022</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-black me-1" href="https://www.facebook.com/mamce.trichy/"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-black me-1"
+                        href="https://www.linkedin.com/school/mamceofficial/posts/?feedView=all" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-black me-0"
+                        href="https://www.instagram.com/mamce.trichy?igsh=MWd3OHpldTdpampiMw==" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Navbar End here -->
+
+    <!-- Navbar Start here -->
+    <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-light px-4 py-1 mt-lg-14 mt-0">
+        <a href="" class="navbar-brand d-flex align-items-center">
+            <img width="300px" class="mamce-logo m-0" src="/assets/images/mamce-logo.png" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4 collapsed" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="/index.html" class="nav-item nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">About</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="/about.html" class="dropdown-item">About Mamce</a>
+                        <a href="/mamceHistory.html" class="dropdown-item">History of Mamce</a>
+                        <a href="/administration.html" class="dropdown-item">Administration</a>
+                        <a href="" class="dropdown-item">Mandatory Disclosure</a>
+                        <a href="" class="dropdown-item">MAMCE In News</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">Courses</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <div class="d-flex">
+
+                            <div>
+                                <p class="dropdown-item h4 fw-bold" style="color: #9d7651;">UG COURSES</p>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.E Civil Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.E Computer Science and Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.E Electrical and Electronics Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.E Electronics and Communication Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.E Electronics and Instrumentation Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.E Information Technology </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.E Mechanical Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.Tech Artificial Intelligence and Data Science </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.Tech Agricultural Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.Tech Biomedical Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.Tech Food Technology </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.Tech Biotechnology </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.Tech Cyber Security </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> B.Tech Artificial Intelligence and Machine Learning </a>
+                            </div>
+
+                            <div>
+                                <p class="dropdown-item h4 fw-bold" style="color: #9d7651;">PG COURSES</p>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> M.B.A Master of Business Administration </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> M.C.A Master of Computer Applications </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> M.E Environmental Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> M.E Computer Science and Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> M.E Electronics and Communication Engineering </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> M.E Power Electronics and Drives </a>
+                                <a href="#" class="dropdown-item"><span class="fw-bold" style="color: #9d7651;">>
+                                    </span> M.E Manufacturing Engineering </a>
+                                          
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="campus.html" class="nav-item nav-link">Campus</a>
+                <a href="placement.html" class="nav-item nav-link">Placement</a>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Online
+                        Payment</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="" class="dropdown-item">Tuition Fees</a>
+                        <a href="" class="dropdown-item">Exam Fees</a>
+                        <a href="" class="dropdown-item">Other Fees</a>
+                        <a href="" class="dropdown-item">New Admission Fees</a>
+                    </div>
+                </div>
+                <a href="#popupForm" class="nav-item nav-link" data-bs-toggle="modal"
+                    data-bs-target="#popupForm">Admission</a>
+                <a href="contact.html" class="nav-item nav-link">EoA</a>
+                <a href="assets/images/Mamce-NIRF.pdf" class="nav-item nav-link">NIRF</a>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">Login</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="" class="dropdown-item">Staff</a>
+                        <a href="" class="dropdown-item">Student</a>
+                        <a href="" class="dropdown-item">Alumini</a>
+                    </div>
+                </div>
+                <a href="/contact-us.html" class="nav-item nav-link">Contact</a>
+                <div class="d-lg-none text-center mt-4 py-4 rounded fs-2 fw-bold" style="background-color: #9d7651;">
+                    <small class="fa-solid fa-graduation-cap text-white me-2"></small>
+                    <small class="text-white">Counselling Code : 3810</small>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End here -->
+
+    <!-- External Js -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/fastbootstrap.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
+</html>

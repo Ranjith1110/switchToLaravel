@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A.M College of Engineering</title>
+    <link href="./assets/images/web-title-logo.png" rel="icon" />
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fastbootstrap.min.css">
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Spinner Start here -->
+    <div id="spinner"
+        class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End here -->
+
+    <!-- Navbar and banner Start here -->
+    <div id="header"></div>
+
+    <header id="home">
+        <div class="container-fluid p-0">
+            <video class="w-100 vh-100 object-fit-cover" width="100%" src="assets/MAMCE.mp4" autoplay muted
+                loop></video>
+        </div>
+    </header>
+    <!-- Navbar and banner End here -->
+
+    <!-- Vertical Button Start here -->
+    <button style="background-color: #9d7651; border: 2px solid #dfcfc1;"
+        class="vertical-button text-white px-md-2 px-0 py-2 rounded text-uppercase" data-bs-toggle="modal"
+        data-bs-target="#" id="openPopupBtn">
+        Admission Enquiry
+    </button>
+    <!-- Vertical Button End here -->
+
+    <!-- About Mamce Start here -->
+    <section id="about">
+        <div class="container">
+            <div class="pt-20">
+                <div class="text-center">
+                    <h2 class="text-center mb-lg-10 title">About MAMCE</h2>
+                </div>
+                <div class="row gap-10 gap-lg-0">
+                    <div class="col-12 col-lg-6">
+                        <div class="shadow p-4 rounded text-justify">
+                            <p class="text-black"><span class="fw-bold" style="color: #9d7651;">M.A.M. College of
+                                    Engineering, Tiruchirappalli</span>
+                                is
+                                approved by the AICTE, New Delhi, and
+                                affiliated to Anna University, Chennai. The college is an ISO 9001-2008 certified
+                                institution and offers 14 Under Graduate and 7 Post Graduate programmes in the domains
+                                of
+                                Engineering, Management, and Computer Applications. All departments have been recognized
+                                as
+                                Research Centres by Anna University, Chennai and the Institute has the facility for
+                                pursuing
+                                doctoral work in the same.</p>
+                            <p class="text-black"><span class="fw-bold" style="color: #9d7651;">Vision :</span> To
+                                Develop a World Class Engineering
+                                Institution Producing Competent Professionals.</p>
+                            <p class="text-black"><span class="fw-bold" style="color: #9d7651;">Mission :</span> To
+                                Blend Rigorous Academics With
+                                Innovative Approaches Under A Sustainable Ambience To Produce Competent Professionals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">
+                        <img width="60%" src="./assets/images/Mamce-28.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Mamce Start here -->
+
+    <!-- Courses Start here -->
+    <section id="courses">
+        <div class="container-fluid">
+
+            <div class="py-lg-10 py-md-8 py-6 text-center">
+                <h2 class="text-center mb-lg-10 title">Courses</h2>
+
+                <div class="row g-lg-0 px-lg-0 px-md-0 px-5 gap-lg-3 gap-0 justify-content-center">
+
+                    <div class="text-center">
+                        <p style="background-color: #9d7651;" class="h4 d-inline-block p-2 fw-bold text-white rounded">
+                            UG Courses</p>
+                    </div>
+
+                    <a href="departments/ug/civil.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/civil engineering.png"
+                                alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Civil Engineering</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/cse.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/cse.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Computer Science & Engineering</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/eee.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/eee.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Electrical & Electronics Engineering</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/ece.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/ece.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Electronics & Communication Engineering
+                            </h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/eie.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/eie.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Electronics & Instrumentation Engineering
+                            </h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/it.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid"
+                                src="./assets/images/courses-img/pg-icons/information-technology .png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Information Technology</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/mechanical.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/mechanical-engineering.png"
+                                alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Mechanical Engineering</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/ai&ds.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/ai&ds.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Artificial intelligence & Data Science
+                            </h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/agricultural.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/smart-agriculture.png"
+                                alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Agricultural Engineering</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/bio-medical.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/bme-logo.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Bio-Medical Engineering</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/food-technology.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/food-technology.png"
+                                alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Food Technology</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/bio-tech.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/bio-technology.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Bio Technology</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/cyber-security.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/cyber security.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Cyber Security</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/ug/ai&ml.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/pg-icons/ai&ml.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Artificial Intelligence & Machine
+                                Learning</h5>
+                        </div>
+                    </a>
+
+                    <div class="text-center my-5">
+                        <p style="background-color: #9d7651;" class="h4 d-inline-block p-2 fw-bold text-white rounded">
+                            PG Courses</p>
+                    </div>
+
+                    <a href="departments/pg/mba.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8 mocha-card">
+                            <img class="img-fluid"
+                                src="./assets/images/courses-img/ug-icons/master-of-business-administration.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Master of Business Administration</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/pg/mca.html" class="col-lg-3 col-md-6 mb-4 courses-item text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid"
+                                src="./assets/images/courses-img/ug-icons/master-of-computer-applications.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Master of Computer Applications</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/pg/environmental-engineering.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid"
+                                src="./assets/images/courses-img/ug-icons/environmental engineering.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Environmental Engineering</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/pg/cse.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/ug-icons/cse.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Computer Science & Engineering</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/pg/ece.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/ug-icons/ece.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Electronics & Communication Engineering
+                            </h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/pg/ped.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid" src="./assets/images/courses-img/ug-icons/ped.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Power Electronics & Drives</h5>
+                        </div>
+                    </a>
+
+                    <a href="departments/pg/manufacturing-engineering.html"
+                        class="col-lg-3 col-md-6 mb-4 courses-item bg-white text-decoration-none">
+                        <div style="background-color: #dfcfc1;"
+                            class="position-relative d-flex gap-4 align-items-center p-8">
+                            <img class="img-fluid"
+                                src="./assets/images/courses-img/ug-icons/manufacturing-engineering.png" alt="">
+                            <h5 class="text-start text-black fs-5 fw-bold m-0">Manufacturing Engineering</h5>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Courses End here -->
+
+    <!-- Facilities Start -->
+    <div class="container-fluid facilities py-5">
+        <div class="container py-5">
+            <div class="text-center">
+
+                <h2 class="text-white d-inline-block fw-bold mb-3 px-5 py-2"
+                    style="background-color: #9d7651; border-radius: 4px;">Facilities</h2>
+
+            </div>
+            <div class="row g-1">
+
+                <div class="col-lg-5 pt-3 px-3 d-lg-block d-none">
+                    <div class="p-1 shadow bg-white rounded">
+                        <div class="p-2">
+                            <div class="row g-2">
+                                <div class="col-lg-6"><img class="img-fluid" src="assets/images/contact.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6"><img class="img-fluid" src="assets/images/contact.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6"><img class="img-fluid" src="assets/images/contact.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6"><img class="img-fluid" src="assets/images/contact.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 pt-3">
+                    <div class="text-black text-center py-10 rounded"
+                        style="background-color: #dfcfc1; border: 1px solid #9d7651;">
+                        <p>COLLEGE HOSTEL</p>
+                        <p>TRANSPORT FACILITY</p>
+                        <p>CAFETERIA</p>
+                        <p>LIBRARY & INFORMATION CENTER</p>
+                        <p>COLLEGE CANTEEN</p>
+                        <p>INTERNET CENTRE</p>
+                        <p>PLAY GROUND</p>
+                        <p>AUDIO VISUAL FACILITY</p>
+                        <p>SEMINAR HALL</p>
+                        <p>MULTIPURPOSE HALL</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 pt-3 px-3 d-lg-block d-none">
+                    <div class="p-1 shadow rounded" style="background-color: #dfcfc1;">
+                        <div class="p-2">
+                            <div class="row g-2">
+                                <div class="col-lg-6"><img class="img-fluid" src="assets/images/contact.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6"><img class="img-fluid" src="assets/images/contact.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6"><img class="img-fluid" src="assets/images/contact.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6"><img class="img-fluid" src="assets/images/contact.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Facilities End -->
+
+    <!-- Career And Placement Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+
+            <!-- Content for Placement -->
+            <div class="py-5">
+                <h2 class="title text-center d-block fw-bold mb-3 px-5 py-2">Career And Placement</h2>
+                <p class="text-justify">M.A.M. College of Engineering has a full-fledged CDP department which seeks the
+                    best career prospects for the budding professionals passing out from Engineering, Management, MCA
+                    and the other programmes offered. The prime objective of the CDP department is to maintain strong
+                    Industry Institute linkage and strive for the holistic development of students & groom them suiting
+                    to the Industry requirements. Having benchmarked ourselves with some of the best ascendancy in our
+                    arena and with the strong industry patronage of our mentors, ‘Team CDP’ surges ahead in offering
+                    tailor-made Career development and Training interventions adapted to the needs of the student
+                    community of MAM.</p>
+                <div class="text-center">
+                    <a href="placement.html" class="btn text-white text-center py-3 fs-6"
+                        style="background-color: #9d7651;">Explore More</a>
+                </div>
+            </div>
+
+            <!-- Placements 2024 -->
+            <div class="py-5">
+                <h2 class="title text-center d-block fw-bold mb-3 px-5 py-2">Placements 2024</h2>
+                <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+
+                    <div class="text-center text-black p-2">
+                        <img class="mb-3" src="assets/images/placements/salary.png" alt="">
+                        <h4 class="fs-2 fw-bold">₹ 1 LPA</h4>
+                        <span>Highest Salary</span>
+                    </div>
+                    <div class="text-center text-black p-2">
+                        <img class="mb-3" src="assets/images/placements/avg-salary.png" alt="">
+                        <h4 class="fs-2 fw-bold">₹ 0 LPA</h4>
+                        <span>Average Salary</span>
+                    </div>
+                    <div class="text-center text-black p-2">
+                        <img class="mb-3" src="assets/images/placements/recruiters.png" alt="">
+                        <h4 class="fs-2 fw-bold">7+</h4>
+                        <span>Recuiters</span>
+                    </div>
+                    <div class="text-center text-black p-2">
+                        <img class="mb-3" src="assets/images/placements/offer.png" alt="">
+                        <h4 class="fs-2 fw-bold">5+</h4>
+                        <span>Offers</span>
+                    </div>
+                    <div class="text-center text-black p-2">
+                        <img class="mb-3" src="assets/images/placements/placement.png" alt="">
+                        <h4 class="fs-2 fw-bold">80%</h4>
+                        <span>Placement</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Placement Companies -->
+            <div class="pt-5 recuiters">
+                <div class="text-center">
+                    <h2 class="title fw-bold mb-3 px-5 py-2 rounded">Our Prominent Recruiters</h2>
+                </div>
+                <div class="marquee-container">
+                    <div class="marquee">
+
+                        <div class="text-center text-black p-2">
+                            <img class="mb-3 w-100" src="assets/images/placement-companys/omega-logo.svg" alt="">
+                        </div>
+                        <div class="text-center text-black p-2">
+                            <img class="mb-3 w-100" src="assets/images/placement-companys/tvs-lucas-logo.png" alt="">
+                        </div>
+                        <div class="text-center text-black p-2">
+                            <img class="mb-3 w-50" src="assets/images/placement-companys/ZF_logo.svg" alt="">
+                        </div>
+                        <div class="text-center text-black p-2">
+                            <img class="mb-3 w-100" src="assets/images/placement-companys/Knacktech-logo.png" alt="">
+                        </div>
+                        <div class="text-center text-black p-2">
+                            <img class="mb-3 w-100" src="assets/images/placement-companys/qspiders_logo.png" alt="">
+                        </div>
+                        <div class="text-center text-black p-2">
+                            <img class="mb-3 w-100" src="assets/images/placement-companys/tap-logo.svg" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Career And Placement End -->
+
+    <!-- Get More Info Start here -->
+    <section id="info">
+        <div class="container">
+            <div class="py-lg-10 py-md-8 py-6 text-center ">
+                <h2 class="text-center mb-lg-10 title">Get More Info</h2>
+                <div class="row g-4">
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp my-5" data-wow-delay="0.1s">
+                        <div class="campus-item position-relative h-100">
+                            <div class="campus-text rounded p-3">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-5">
+                                    <img class="img-fluid" src="assets/images/info/administration.jpg" alt="Icon">
+                                </div>
+                                <h5 class="mb-2 fs-3 fw-bold text-black">Administration</h4>
+                            </div>
+                            <div class="campus-btn rounded-0 rounded-bottom">
+                                <a class="fw-medium" href="administration.html">Read More<i
+                                        class="bi bi-chevron-double-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp my-5" data-wow-delay="0.1s">
+                        <div class="campus-item position-relative h-100">
+                            <div class="campus-text rounded p-3">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-5">
+                                    <img class="img-fluid" src="assets/images/info/courses.jpg" alt="Icon">
+                                </div>
+                                <h5 class="mb-2 fs-3 fw-bold text-black">Courses</h4>
+                            </div>
+                            <div class="campus-btn rounded-0 rounded-bottom">
+                                <a class="fw-medium" href="courses.html">Read More<i
+                                        class="bi bi-chevron-double-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp my-5" data-wow-delay="0.1s">
+                        <div class="campus-item position-relative h-100">
+                            <div class="campus-text rounded p-3">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-5">
+                                    <img class="img-fluid" src="assets/images/info/campus.jpg" alt="Icon">
+                                </div>
+                                <h5 class="mb-2 fs-3 fw-bold text-black">Campus</h4>
+                            </div>
+                            <div class="campus-btn rounded-0 rounded-bottom">
+                                <a class="fw-medium" href="campus.html">Read More<i
+                                        class="bi bi-chevron-double-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp my-5" data-wow-delay="0.1s">
+                        <div class="campus-item position-relative h-100">
+                            <div class="campus-text rounded p-3">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-5">
+                                    <img class="img-fluid" src="assets/images/info/research.jpg" alt="Icon">
+                                </div>
+                                <h5 class="mb-2 fs-3 fw-bold text-black">Research</h4>
+                            </div>
+                            <div class="campus-btn rounded-0 rounded-bottom">
+                                <a class="fw-medium" href="courses.html">Read More<i
+                                        class="bi bi-chevron-double-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp my-5" data-wow-delay="0.1s">
+                        <div class="campus-item position-relative h-100">
+                            <div class="campus-text rounded p-3">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-5">
+                                    <img class="img-fluid" src="assets/images/info/courses.jpg" alt="Icon">
+                                </div>
+                                <h5 class="mb-2 fs-3 fw-bold text-black">Alumini</h4>
+                            </div>
+                            <div class="campus-btn rounded-0 rounded-bottom">
+                                <a class="fw-medium" href="courses.html">Read More<i
+                                        class="bi bi-chevron-double-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Get More Info End here -->
+
+    <!-- Upcoming Events Start here -->
+    <section id="upcoming">
+        <div class="container">
+            <div class="py-lg-10 py-md-8 py-6 text-center ">
+                <h2 class="mb-lg-10 title">UPCOMING EVENTS</h2>
+                <h4 class="mb-lg-10">Coming Soon..</h4>
+            </div>
+        </div>
+    </section>
+    <!-- Upcoming Events End here -->
+
+    <!-- Container for the popup form -->
+    <div id="popupContainer"></div>
+
+    <!-- Footer Start here -->
+    <div id="footer"></div>
+    <!-- Footer End here -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+        $(function () {
+            // Load the popup form dynamically
+            $("#popupContainer").load("../popup-form.html", function () {
+                // Add event listeners after the form is loaded
+                $("#openPopupBtn").on("click", function () {
+                    $("#popupOverlay").show();
+                });
+                $(document).on("click", "#closePopupBtn", function () {
+                    $("#popupOverlay").hide();
+                });
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>

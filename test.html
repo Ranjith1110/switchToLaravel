@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Popup Form</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <style>
+        /* Add the styles for overlay and popup form here */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+        .popup-form {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            z-index: 1001;
+            width: 300px;
+        }
+        .popup-form .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+        .overlay.active {
+            display: block;
+        }
+    </style>
+    <script>
+        $(function() {
+            // Determine the folder depth and build the relative path
+            const folderDepth = window.location.pathname.split('/').length - 2;
+            let relativePath = '';
+            for (let i = 0; i < folderDepth; i++) {
+                relativePath += '../';
+            }
+
+            // Load the popup form
+            $("#popupContainer").load(relativePath + "popupForm.html", function() {
+                // Add event listeners after the form is loaded
+                const openPopupBtn = document.getElementById('openPopupBtn');
+                const closePopupBtn = document.getElementById('closePopupBtn');
+                const overlay = document.getElementById('popupOverlay');
+
+                if (openPopupBtn && closePopupBtn && overlay) {
+                    openPopupBtn.addEventListener('click', () => {
+                        overlay.classList.add('active');
+                    });
+                    closePopupBtn.addEventListener('click', () => {
+                        overlay.classList.remove('active');
+                    });
+                    overlay.addEventListener('click', (event) => {
+                        if (event.target === overlay) {
+                            overlay.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Button to open the popup -->
+    <button id="openPopupBtn">Open Form</button>
+
+    <!-- Container for the popup form -->
+    <div id="popupContainer"></div>
+</body>
+</html>
