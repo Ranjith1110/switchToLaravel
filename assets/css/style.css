@@ -1,0 +1,510 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease !important;
+    font-family: 'OpenSans-Regular';
+}
+
+:root {
+    --bg-color: #E4EDEC;
+    --white: #fff;
+    --main: #dfcfc1;
+    --main-sec: #9d7651;
+    --dark: #000;
+}
+
+/* OpenSans Start here */
+@font-face {
+    font-family: 'OpenSans-Regular';
+    /* src: url('/assets/fonts/AVFontimer-Regular.ttf') format('truetype'); */
+    /* src: url('/assets/fonts/Bestigia-Regular.ttf') format('truetype'); */
+    src: url('/assets/fonts/EspumaPro-Regular.otf') format('truetype');
+    /* src: url('/assets/fonts/OpenSans-Regular.ttf') format('truetype'); */
+    font-display: swap;
+}
+
+/* OpenSans End here */
+
+a {
+    text-decoration: none;
+}
+
+h2::selection {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+/* Navbar Start here */
+
+.nav-link {
+    color: #000 !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 992px) {
+
+    .mamce-logo {
+        width: 250px;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .mamce-logo {
+        width: 230px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .mamce-logo {
+        width: 170px;
+    }
+}
+
+/* Navbar End here */
+
+/* Vertical Button Start here */
+
+.vertical-button {
+    font-family: 'OpenSans-Regular';
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%), ;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    z-index: 1050;
+}
+
+.modal-content {
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+/* Vertical Button End here */
+
+/* Carousel Start here */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    padding: 30px;
+}
+
+@media (max-width: 769px) {
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 20px;
+    }
+
+    .vertical-button1 {
+        top: 58.2%;
+        right: 0%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 6px;
+    }
+
+    .vertical-button1 {
+        top: 58.2%;
+        right: 0%;
+    }
+
+    .vertical-button {
+        position: fixed;
+        top: 30%;
+        right: 0%;
+        transform: translateY(-50%), ;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        text-align: center;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        z-index: 1050;
+    }
+}
+
+/* Carousel End here */
+
+/* About Start here */
+.title {
+    display: inline-block;
+    color: var(--main-sec);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
+.title-slogan {
+    color: var(--main-sec);
+}
+
+@media (max-width: 500px) {
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+/* About End here */
+
+/* Career And Placement Start here */
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 2px dotted #9d7651;
+    border-bottom: 2px dotted #9d7651;
+}
+
+.marquee {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    animation: scroll-left 20s linear infinite;
+}
+
+.marquee img {
+    width: 100px;
+    height: auto;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Career And Placement End here */
+
+/* Get More Info Start here */
+.info-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-inner::before,
+.info-inner::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transition: .5s;
+}
+
+.info-inner::after {
+    left: auto;
+    right: 0;
+}
+
+.info-inner:hover::before,
+.info-inner:hover::after {
+    width: 50%;
+}
+
+.info-inner .info-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 333;
+    opacity: 0;
+}
+
+.info-inner:hover .info-text {
+    transition-delay: .3s;
+    opacity: 1;
+}
+
+.info-inner .info-text .btn:hover {
+    background: var(--primary);
+    color: var(--light);
+}
+
+/* Get More Info Start here */
+
+/* facilities Start */
+.facilities {
+    background: linear-gradient(rgba(22, 21, 21, 0.5), rgba(4, 4, 4, 0.9)), url(/assets/images/contact.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* facilities End */
+
+/* Courses Style Start here */
+.courses-item {
+    border-radius: 8px;
+}
+
+.courses-item:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    .courses-btn {
+        flex-direction: column;
+    }
+
+    .courses-btn a {
+        margin-top: 10px;
+    }
+
+}
+
+/* Courses Style End here */
+
+/* Departments Start here */
+.dep-banner div div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dep-banner div div h2 {
+    font-size: 3rem;
+}
+
+.sidebar {
+    border-right: 1px solid #ddd;
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    border-left: 4px solid var(--main-sec);
+}
+
+.sidebar li:hover {
+    background-color: #f1f1f1;
+}
+
+.box {
+    border: 2px solid #cce5ff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 20px;
+    background: #f9f9f9;
+}
+
+@media (max-width: 769px) {
+
+    .dep-banner div div h2 {
+        font-size: 4rem;
+    }
+
+    .dep-banner div img {
+        height: 100vh;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        height: auto;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar li {
+        border-left: none;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .sidebar li.active {
+        background-color: #f8f9fa;
+        border-left: none;
+        border-bottom: 3px solid var(--main-sec);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .dep-banner div div h2 {
+        font-size: 3rem;
+    }
+
+}
+
+/* Departments End here */
+
+/* Administration Start here */
+
+@media (max-width: 993px) {
+
+    .reverse-sm {
+        flex-direction: column-reverse;
+    }
+
+}
+
+/* About Page Start here */
+.table-container {
+    overflow-x: auto;
+}
+
+.trust-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+}
+
+.trust-table th,
+.trust-table td {
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+}
+
+.trust-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.trust-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* About Page End here */
+
+/*** Campus Page Start here ***/
+.campus-item .campus-text {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .06);
+    transition: .5s;
+    z-index: 2;
+}
+
+.campus-item:hover .campus-text {
+    top: -1.5rem;
+}
+
+.campus-item .campus-text h5 {
+    transition: .5s;
+}
+
+.campus-item .campus-btn {
+    position: absolute;
+    width: 80%;
+    height: 3rem;
+    left: 10%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    transition: .5s;
+    z-index: 1;
+}
+
+.campus-item:hover .campus-btn {
+    background-color: var(--main-sec);
+    bottom: -1.5rem;
+}
+
+.campus-item:hover .campus-btn a {
+    color: var(--white);
+}
+
+/*** Campus Page Start here ***/
+
+/* Contact Page start */
+.contact-image {
+    background: url('/assets/images/contact.jpg') center center / cover no-repeat;
+}
+
+.contact-container {
+    background-color: #e6f0eb;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Page end */
