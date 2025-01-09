@@ -9,7 +9,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     transition: 0.3s ease !important;
-    font-family: 'OpenSans-Regular';
+    font-family: 'EspumaPro-Regular';
 }
 
 :root {
@@ -22,11 +22,8 @@ html {
 
 /* OpenSans Start here */
 @font-face {
-    font-family: 'OpenSans-Regular';
-    /* src: url('/assets/fonts/AVFontimer-Regular.ttf') format('truetype'); */
-    /* src: url('/assets/fonts/Bestigia-Regular.ttf') format('truetype'); */
+    font-family: 'EspumaPro-Regular';
     src: url('/assets/fonts/EspumaPro-Regular.otf') format('truetype');
-    /* src: url('/assets/fonts/OpenSans-Regular.ttf') format('truetype'); */
     font-display: swap;
 }
 

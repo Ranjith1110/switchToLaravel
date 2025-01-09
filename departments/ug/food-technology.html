@@ -95,8 +95,8 @@
     </button>
     <!-- Vertical Button End here -->
 
-   <!-- Container for the popup form -->
-   <div id="popupContainer"></div>
+    <!-- Container for the popup form -->
+    <div id="popupContainer"></div>
 
     <!-- Banner Section Start here -->
     <section id="banner">
@@ -145,7 +145,12 @@
                         <div id="about" class="content-section">
                             <h2 class="title-slogan mb-4">About</h2>
                             <p class="text-justify">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae possimus aliquam officia. Optio accusantium quam libero omnis odio, totam excepturi ipsa sunt natus beatae, error consequatur vitae in, dolore labore aliquid modi exercitationem accusamus quos vero! Odio fuga voluptatibus id ea dolores necessitatibus aliquid, quos nostrum ratione vero dignissimos excepturi odit nihil sit animi earum repellat omnis obcaecati ipsa!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae possimus
+                                aliquam officia. Optio accusantium quam libero omnis odio, totam excepturi ipsa sunt
+                                natus beatae, error consequatur vitae in, dolore labore aliquid modi exercitationem
+                                accusamus quos vero! Odio fuga voluptatibus id ea dolores necessitatibus aliquid, quos
+                                nostrum ratione vero dignissimos excepturi odit nihil sit animi earum repellat omnis
+                                obcaecati ipsa!
                             </p>
 
                             <div class="mt-10 p-5" style="border: 10px solid #9d7651;">
@@ -439,42 +444,11 @@
     <!-- Footer End here -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script>
-        $(function () {
-            // Determine the folder depth
-            const folderDepth = window.location.pathname.split('/').length - 2;
 
-            // Build the relative path for header and footer
-            let relativePath = '';
-            for (let i = 0; i < folderDepth; i++) {
-                relativePath += '../';
-            }
-
-            // Load the header and footer
-            $("#header").load(relativePath + "header.html");
-            $("#footer").load(relativePath + "footer.html");
-        });
-
-        $(function () {
-            const folderDepth = window.location.pathname.split('/').length - 2;
-            let relativePath = '';
-            for (let i = 0; i < folderDepth; i++) {
-                relativePath += '../';
-            }
-
-            $("#popupContainer").load(relativePath + "popup-form.html", function () {
-                $("#openPopupBtn").on("click", function () {
-                    $("#popupOverlay").show();
-                });
-                $(document).on("click", "#closePopupBtn", function () {
-                    $("#popupOverlay").hide();
-                });
-            });
-        });
-    </script>
 
     <!-- External Js -->
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/department.js"></script>
     <!-- Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <!-- Bootstrap -->

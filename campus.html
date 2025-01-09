@@ -180,22 +180,20 @@
             $("#header").load("header.html");
             $("#footer").load("footer.html");
         });
-    </script>
 
-<script>
-    $(function () {
-        // Load the popup form dynamically
-        $("#popupContainer").load("../popup-form.html", function () {
-            // Add event listeners after the form is loaded
-            $("#openPopupBtn").on("click", function () {
-                $("#popupOverlay").show();
-            });
-            $(document).on("click", "#closePopupBtn", function () {
-                $("#popupOverlay").hide();
+        $(function () {
+            // Load the popup form dynamically
+            $("#popupContainer").load("../popup-form.html", function () {
+                // Add event listeners after the form is loaded
+                $("#openPopupBtn").on("click", function () {
+                    $("#popupOverlay").show();
+                });
+                $(document).on("click", "#closePopupBtn", function () {
+                    $("#popupOverlay").hide();
+                });
             });
         });
-    });
-</script>
+    </script>
 
     
 
