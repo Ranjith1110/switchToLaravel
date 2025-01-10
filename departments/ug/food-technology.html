@@ -13,63 +13,6 @@
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 
-    <style>
-        /* Glassmorphism background */
-        .modal-content {
-            background: rgba(255, 255, 255, 0.25);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 15px;
-        }
-
-        /* Glassmorphic input fields */
-        .form-control,
-        .form-select {
-            background: rgba(255, 255, 255, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(5px);
-            border-radius: 8px;
-            padding: 10px;
-            font-size: 1rem;
-            color: #000;
-            transition: all 0.3s ease;
-        }
-
-        .form-control:focus,
-        .form-select:focus {
-            border-color: rgba(211, 32, 50, 0.5);
-            box-shadow: 0 0 8px rgba(232, 39, 58, 0.5);
-            outline: none;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .scrolled {
-            background-color: white;
-            color: black;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .scrolled .nav-link {
-            color: black !important;
-        }
-
-        @media (max-width: 769px) {
-            .navbar {
-                background: #fff;
-            }
-
-        }
-    </style>
-
 </head>
 
 <body>
@@ -129,11 +72,9 @@
                         <ul class="p-0">
                             <li class="active text-black" data-target="about">ABOUT</li>
                             <li class="text-black" data-target="facilities">Facilities</li>
-                            <li class="text-black" data-target="speciality">Speciality</li>
                             <li class="text-black" data-target="value-added-programmes">Value Added Programmes</li>
                             <li class="text-black" data-target="students-corner">Students' Corner</li>
                             <li class="text-black" data-target="placement">Placement</li>
-                            <li class="text-black" data-target="events">Events</li>
                             <li class="text-black" data-target="gallery">Gallery</li>
                             <li class="text-black" data-target="contact-us">Contact Us</li>
                         </ul>
@@ -144,18 +85,18 @@
                         <!-- About Section -->
                         <div id="about" class="content-section">
                             <h2 class="title-slogan mb-4">About</h2>
-                            <p class="text-justify">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae possimus
-                                aliquam officia. Optio accusantium quam libero omnis odio, totam excepturi ipsa sunt
-                                natus beatae, error consequatur vitae in, dolore labore aliquid modi exercitationem
-                                accusamus quos vero! Odio fuga voluptatibus id ea dolores necessitatibus aliquid, quos
-                                nostrum ratione vero dignissimos excepturi odit nihil sit animi earum repellat omnis
-                                obcaecati ipsa!
+                            <p class="text-justify text-black">
+                                Food technology encompasses a range of scientific and technological processes used to
+                                transform raw ingredients into food products. It is a branch of engineering that deals
+                                with the techniques involved in the production
+                                ,processing,preservation,packaging,labelling,quality management and distribution of food
+                                products. It involves various disciplines such as chemistry,microbiology,engineering,and
+                                nutrition.
                             </p>
 
                             <div class="mt-10 p-5" style="border: 10px solid #9d7651;">
                                 <h2 class="title-slogan mb-4">VISION</h2>
-                                <p class="text-justify">
+                                <p class="text-justify text-black">
                                     To be centre of excellence for development and dissemination of knowledge in the
                                     field of food technology for the nation and beyond. To be a centre ofrepute in the
                                     frontier areas of food technology through quality research and education.
@@ -163,8 +104,8 @@
                             </div>
                             <div class="mt-10 p-5" style="border: 10px solid #9d7651;">
                                 <h2 class="title-slogan mb-4">MISSION</h2>
-                                <p class="text-justify">
-                                    Develop vibrant,competent and ethical food engineers who can promote technical
+                                <p class="text-justify text-black">
+                                    Develop vibrant, competent and ethical food engineers who can promote technical
                                     advancements in the field of food technology.To impart knowledge in the realm of
                                     food technology through research and education.Faster the research activities of
                                     faculty and students to explore the state-of-the-air techniques to meet the
@@ -176,7 +117,7 @@
                         <!-- Facilities Section -->
                         <div id="facilities" class="content-section d-none">
                             <h2 class="title-slogan mb-4">Facilities</h2>
-                            <ul>
+                            <ul class="text-black">
                                 <li>Food Chemistry Laboratory</li>
                                 <li>Food Microbiology Laboratory</li>
                                 <li>Biochemistry and Nutrition Laboratory</li>
@@ -187,19 +128,10 @@
                             </ul>
                         </div>
 
-                        <!-- Speciality Section -->
-                        <div id="speciality" class="content-section d-none">
-                            <h2 class="title-slogan mb-4">Speciality</h2>
-                            <ul>
-                                <li>CADD Laboratory for Agricultural Engineering</li>
-                                <li>Remote sensing and GIS Laboratory in Agricultural Engineering</li>
-                            </ul>
-                        </div>
-
                         <!-- Value added programmes Section -->
                         <div id="value-added-programmes" class="content-section d-none">
                             <h2 class="title-slogan mb-4">Value added programmes</h2>
-                            <p>AUTOCADD and NAAN MUDHALVAN ( ORACLE/ ADDITIVE MANUFACTURING)</p>
+                            <p class="text-black">Update Soon...</p>
                         </div>
 
                         <!-- Students' Corner Section -->
@@ -213,6 +145,7 @@
                                         <tr class="text-white" style="background-color: #9d7651;">
                                             <th>SI.NO</th>
                                             <th>STUDENT NAME</th>
+                                            <th>YEAR</th>
                                             <th>EVENT NAME</th>
                                             <th>COLLEGE NAME</th>
                                             <th>PRIZE</th>
@@ -221,38 +154,57 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>AMSAVALLI P</td>
-                                            <td>FIRELESS COOKING</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
+                                            <td>D.Sandhiya</td>
+                                            <td>3rd Year</td>
+                                            <td>Technical Symposium</td>
+                                            <td>KONDU ENGINEERING COLLEGE</td>
                                             <td>FIRST PRICE</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>SRINITHI T</td>
-                                            <td>FIRELESS COOKING</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
-                                            <td>FIRST PRICE</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>SIVARANJANI V</td>
-                                            <td>CONNECTION EVENT</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
+                                            <td>S.Abitha</td>
+                                            <td>3rd Year</td>
+                                            <td>Technical Symposium</td>
+                                            <td>KONDU ENGINEERING COLLEGE</td>
                                             <td>SECOND PRICE</td>
                                         </tr>
                                         <tr>
+                                            <td>3</td>
+                                            <td>M.Dharika, 
+                                                S.Knimozhi
+                                            </td>
+                                            <td>3rd Year</td>
+                                            <td>TECHFINIX-24</td>
+                                            <td>PAAVAI ENGIUNEERING COLLEGE</td>
+                                            <td>FIRST PRICE</td>
+                                        </tr>
+                                        <tr>
                                             <td>4</td>
-                                            <td>VINISHA T</td>
-                                            <td>CONNECTION EVENT</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
-                                            <td>THIRD PRICE</td>
+                                            <td>Ashima sri
+                                                Navanayagi
+                                            </td>
+                                            <td>3rd Year</td>
+                                            <td>Technical Symposium</td>
+                                            <td>KONDU ENGINEERING COLLEGE</td>
+                                            <td>SECOND PRICE</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
                                             <td>THANGAMARIS K</td>
-                                            <td>CONNECTION EVENT</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
-                                            <td>THIRD PRICE</td>
+                                            <td>3rd Year</td>
+                                            <td>Technical Symposium</td>
+                                            <td>KONDU ENGINEERING COLLEGE</td>
+                                            <td>SECOND PRICE</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>P.Swathi, 
+                                                S.Vaishnavi
+                                                </td>
+                                            <td>2nd Year</td>
+                                            <td>BIOFENIX 2K24</td>
+                                            <td>SALEM ENGINEERING COLLEGE</td>
+                                            <td>SECOND PRICE</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -263,115 +215,7 @@
                         <!-- Placements Section -->
                         <div id="placement" class="content-section d-none">
                             <h2 class="title-slogan mb-4">Placements</h2>
-
-                            <div class="table-container">
-                                <table class="trust-table">
-                                    <thead>
-                                        <tr class="text-white" style="background-color: #9d7651;">
-                                            <th>SI.NO</th>
-                                            <th>STUDENT NAME</th>
-                                            <th>YEAR</th>
-                                            <th>JOB TITLE</th>
-                                            <th>STUDENT PHOTO</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>ARIVUKARASU.A</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>ARUNPANDIYAN.A</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>DHINESKUMAR.M</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>KANIGACHALAM.G</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>HELEN SOBHA.A</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div>
-
-                        <!-- Events Section -->
-                        <div id="events" class="content-section d-none">
-                            <h2 class="title-slogan mb-4">Events</h2>
-
-                            <div class="table-container">
-                                <table class="trust-table">
-                                    <thead>
-                                        <tr class="text-white" style="background-color: #9d7651;">
-                                            <th>SI.NO</th>
-                                            <th>NAME OF EVENT</th>
-                                            <th>EVENT DATE</th>
-                                            <th>STUDENTS</th>
-                                            <th>RESOURCE PERSON</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>PRESENTATION DAY</td>
-                                            <td>12-02-2024</td>
-                                            <td>III & IV YEAR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>CONSERVE SOLUTION SEMINAR AT BIM</td>
-                                            <td>06-03-2024</td>
-                                            <td>III & IV YEAR</td>
-                                            <td>Mr. M. MAHESWARN</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>SYMPOMISUM</td>
-                                            <td>23-03-2024</td>
-                                            <td>II, III & IV YEAR</td>
-                                            <td>Dr.K.DEVAKUMARAN</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>KPM TOPOMAPPER& ENGINNERING SURVEYOR (INTERNSHIP COME PLACEMENT)</td>
-                                            <td>04-03-2024</td>
-                                            <td>IV</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>WORKSHOP ON SOFTWARE DEMONSTRATION</td>
-                                            <td>27-05-2024</td>
-                                            <td>II & III YEAR</td>
-                                            <td>Mr.SANTHANA GOPALA KRISHNAN</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
+                            <p class="text-black">Update Soon...</p>
                         </div>
 
                         <!-- Gallery Section -->
@@ -430,7 +274,11 @@
         <div class="container">
             <div class="py-lg-10 py-md-8 py-6 text-center ">
                 <h2 class="mb-lg-10 title">UPCOMING EVENTS</h2>
-                <h4 class="mb-lg-10">Coming Soon..</h4>
+                <!-- <h4 class="mb-lg-10">Coming Soon..</h4> -->
+
+                <h4 class="text-black">March-Food festival</h4>
+                <h4 class="text-black">April-Guests lecture</h4>
+                <h4 class="text-black">April-Workshop</h4>
             </div>
         </div>
     </section>
