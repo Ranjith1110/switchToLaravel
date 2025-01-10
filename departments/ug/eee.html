@@ -13,63 +13,6 @@
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 
-    <style>
-        /* Glassmorphism background */
-        .modal-content {
-            background: rgba(255, 255, 255, 0.25);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 15px;
-        }
-
-        /* Glassmorphic input fields */
-        .form-control,
-        .form-select {
-            background: rgba(255, 255, 255, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(5px);
-            border-radius: 8px;
-            padding: 10px;
-            font-size: 1rem;
-            color: #000;
-            transition: all 0.3s ease;
-        }
-
-        .form-control:focus,
-        .form-select:focus {
-            border-color: rgba(211, 32, 50, 0.5);
-            box-shadow: 0 0 8px rgba(232, 39, 58, 0.5);
-            outline: none;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .scrolled {
-            background-color: white;
-            color: black;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .scrolled .nav-link {
-            color: black !important;
-        }
-
-        @media (max-width: 769px) {
-            .navbar {
-                background: #fff;
-            }
-
-        }
-    </style>
-
 </head>
 
 <body>
@@ -90,13 +33,8 @@
     <!-- Vertical Button Start here -->
     <button style="background-color: #9d7651; border: 2px solid #dfcfc1;"
         class="vertical-button text-white px-md-2 px-0 py-2 rounded text-uppercase" data-bs-toggle="modal"
-        data-bs-target="#popupForm">
+        data-bs-target="#" id="openPopupBtn">
         Admission Enquiry
-    </button>
-    <button style="background-color: #9d7651; border: 2px solid #dfcfc1;"
-        class="vertical-button1 text-white px-md-2 px-0 py-2 rounded text-uppercase" data-bs-toggle="modal"
-        data-bs-target="#popupForm">
-        Book Your Admission
     </button>
     <!-- Vertical Button End here -->
 
@@ -150,7 +88,7 @@
                         <!-- About Section -->
                         <div id="about" class="content-section">
                             <h2 class="title-slogan mb-4">About</h2>
-                            <p class="text-justify">
+                            <p class="text-justify text-black">
                                 Electrical engineering is an engineering discipline concerned with the study, design,
                                 and application of equipment, devices, and systems which use electricity, electronics,
                                 and electromagnetism. It emerged as an identifiable occupation in the latter half of the
@@ -161,13 +99,13 @@
                                 OUTCOMES ></button>
                             <div class="mt-10 p-5" style="border: 10px solid #9d7651;">
                                 <h2 class="title-slogan mb-4">VISION</h2>
-                                <p class="text-justify">
+                                <p class="text-justify text-black">
                                     To develop as world class engineering institution producing competent professionals
                                 </p>
                             </div>
                             <div class="mt-10 p-5" style="border: 10px solid #9d7651;">
                                 <h2 class="title-slogan mb-4">MISSION</h2>
-                                <p class="text-justify">
+                                <p class="text-justify text-black">
                                     To blend rigorous academics with innovative approaches under a sustainable ambience
                                     to produce competent professionals
                                 </p>
@@ -177,7 +115,7 @@
                         <!-- Facilities Section -->
                         <div id="facilities" class="content-section d-none">
                             <h2 class="title-slogan mb-4">Facilities</h2>
-                            <ul>
+                            <ul class="text-black">
                                 <li>ELECTRICAL MACHINE LAB</li>
                                 <li>POWER ELECTRONICS LAB</li>
                                 <li>ELECTRONIC AND DEVICES LAB</li>
@@ -190,7 +128,7 @@
                         <!-- Speciality Section -->
                         <div id="speciality" class="content-section d-none">
                             <h2 class="title-slogan mb-4">Speciality</h2>
-                            <ul>
+                            <ul class="text-black">
                                 <li>RENEWABLE ENERGY LAB</li>
                                 <li>RESEARCH AND DEVELOPMENT</li>
                             </ul>
@@ -199,11 +137,13 @@
                         <!-- Value added programmes Section -->
                         <div id="value-added-programmes" class="content-section d-none">
                             <h2 class="title-slogan mb-4">Value added programmes</h2>
-                            <li>AUTO CADD</li>
-                            <li>MATLAB</li>
-                            <li>LAB VIEW</li>
-                            <li>NAN MUDHALVAN ( DRONE TECHNOLOGY)</li>
-                            <li>ELECTRICAL VECHICLE TECHNOLOGY</li>
+                            <ul class="text-black">
+                                <li>AUTO CADD</li>
+                                <li>MATLAB</li>
+                                <li>LAB VIEW</li>
+                                <li>NAN MUDHALVAN ( DRONE TECHNOLOGY)</li>
+                                <li>ELECTRICAL VECHICLE TECHNOLOGY</li>
+                            </ul>
                         </div>
 
                         <!-- Students' Corner Section -->
@@ -217,6 +157,7 @@
                                         <tr class="text-white" style="background-color: #9d7651;">
                                             <th>SI.NO</th>
                                             <th>STUDENT NAME</th>
+                                            <th>YEAR</th>
                                             <th>EVENT NAME</th>
                                             <th>COLLEGE NAME</th>
                                             <th>PRIZE</th>
@@ -225,38 +166,27 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>AMSAVALLI P</td>
-                                            <td>FIRELESS COOKING</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
-                                            <td>FIRST PRICE</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>SRINITHI T</td>
-                                            <td>FIRELESS COOKING</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
-                                            <td>FIRST PRICE</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>SIVARANJANI V</td>
-                                            <td>CONNECTION EVENT</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
+                                            <td>RAFEEQA</td>
+                                            <td>III YR</td>
+                                            <td>-</td>
+                                            <td>Holy cross clg</td>
                                             <td>SECOND PRICE</td>
                                         </tr>
                                         <tr>
-                                            <td>4</td>
-                                            <td>VINISHA T</td>
-                                            <td>CONNECTION EVENT</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
-                                            <td>THIRD PRICE</td>
+                                            <td>2</td>
+                                            <td>Mohansundaram</td>
+                                            <td>III YR</td>
+                                            <td>Technical symposium</td>
+                                            <td>Salem engg college</td>
+                                            <td>SECOND PRICE</td>
                                         </tr>
                                         <tr>
-                                            <td>5</td>
-                                            <td>THANGAMARIS K</td>
-                                            <td>CONNECTION EVENT</td>
-                                            <td>PERIYAR MANIAMMAI COLLEGE</td>
-                                            <td>THIRD PRICE</td>
+                                            <td>3</td>
+                                            <td>RAFEEQA</td>
+                                            <td>III YR</td>
+                                            <td>Technical symposium</td>
+                                            <td>KRCE engg college</td>
+                                            <td>SECOND PRICE</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -268,56 +198,7 @@
                         <div id="placement" class="content-section d-none">
                             <h2 class="title-slogan mb-4">Placements</h2>
 
-                            <div class="table-container">
-                                <table class="trust-table">
-                                    <thead>
-                                        <tr class="text-white" style="background-color: #9d7651;">
-                                            <th>SI.NO</th>
-                                            <th>STUDENT NAME</th>
-                                            <th>YEAR</th>
-                                            <th>JOB TITLE</th>
-                                            <th>STUDENT PHOTO</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>ARIVUKARASU.A</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>ARUNPANDIYAN.A</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>DHINESKUMAR.M</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>KANIGACHALAM.G</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>HELEN SOBHA.A</td>
-                                            <td>IV</td>
-                                            <td>SURVEYOR</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <p class="text-black">Update Soon...</p>
 
                         </div>
 
@@ -325,57 +206,11 @@
                         <div id="events" class="content-section d-none">
                             <h2 class="title-slogan mb-4">Events</h2>
 
-                            <div class="table-container">
-                                <table class="trust-table">
-                                    <thead>
-                                        <tr class="text-white" style="background-color: #9d7651;">
-                                            <th>SI.NO</th>
-                                            <th>NAME OF EVENT</th>
-                                            <th>EVENT DATE</th>
-                                            <th>STUDENTS</th>
-                                            <th>RESOURCE PERSON</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>PRESENTATION DAY</td>
-                                            <td>12-02-2024</td>
-                                            <td>III & IV YEAR</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>CONSERVE SOLUTION SEMINAR AT BIM</td>
-                                            <td>06-03-2024</td>
-                                            <td>III & IV YEAR</td>
-                                            <td>Mr. M. MAHESWARN</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>SYMPOMISUM</td>
-                                            <td>23-03-2024</td>
-                                            <td>II, III & IV YEAR</td>
-                                            <td>Dr.K.DEVAKUMARAN</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>KPM TOPOMAPPER& ENGINNERING SURVEYOR (INTERNSHIP COME PLACEMENT)</td>
-                                            <td>04-03-2024</td>
-                                            <td>IV</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>WORKSHOP ON SOFTWARE DEMONSTRATION</td>
-                                            <td>27-05-2024</td>
-                                            <td>II & III YEAR</td>
-                                            <td>Mr.SANTHANA GOPALA KRISHNAN</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
+                            <ul class="text-black">
+                                <li>Presentation Day</li>
+                                <li>Work Shop</li>
+                            </ul>
+                            
                         </div>
 
                         <!-- Gallery Section -->
