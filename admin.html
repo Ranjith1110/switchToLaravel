@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/fastbootstrap.min.css">
+
+    <style>
+        /* Sidebar Start */
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh;
+            padding: 0 0.6rem;
+            color: #fff;
+            font-weight: 600;
+            overflow-x: hidden;
+            transition: left 0.3s ease;
+            background-color: #2f4050;
+            z-index: 999;
+        }
+
+        .sidebar>div>ul>li:first-child>div>span>img {
+            border-radius: 50% 50%;
+            height: 50px;
+            max-width: 100% !important;
+        }
+
+        .sidebar>div>ul {
+            position: relative;
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar>div>ul>li {
+            padding: 0.9rem;
+            margin: 8px auto;
+            border-radius: 8px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .sidebar>div>ul>li:not(:first-child):hover {
+            background: #8f8f8f;
+        }
+
+        .sidebar>div>ul>li>div>a {
+            color: #fff;
+            cursor: auto;
+            text-decoration: none;
+        }
+
+        .sidebar>div>ul>li>a {
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .sidebar>div>ul>li>a>i {
+            font-size: 1rem;
+        }
+
+        /* Sidebar end */
+
+        .content {
+            margin-left: 250px;
+            min-height: 100vh;
+            background: #FFFFFF;
+            transition: 0.5s;
+        }
+
+        @media (min-width: 992px) {
+            .sidebar {
+                margin-left: 0;
+            }
+
+            .sidebar.open {
+                margin-left: -250px;
+            }
+
+            .content {
+                width: calc(100% - 250px);
+            }
+
+            .content.open {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .sidebar {
+                margin-left: -250px;
+            }
+
+            .sidebar.open {
+                margin-left: 0;
+            }
+
+            .content {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        /*** Navbar ***/
+
+        .content .navbar .navbar-nav .nav-link {
+            margin-left: 25px;
+            padding: 12px 0;
+            color: var(--dark);
+            outline: none;
+        }
+
+        .content .navbar .navbar-nav .nav-link:hover,
+        .content .navbar .navbar-nav .nav-link.active {
+            color: var(--primary);
+        }
+
+        .content .navbar .sidebar-toggler,
+        .content .navbar .navbar-nav .nav-link i {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFFFFF;
+            border-radius: 40px;
+        }
+
+        .content .navbar .dropdown-toggle::after {
+            margin-left: 6px;
+            vertical-align: middle;
+            border: none;
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            transition: .5s;
+        }
+
+        .content .navbar .dropdown-toggle[aria-expanded=true]::after {
+            transform: rotate(-180deg);
+        }
+
+        @media (max-width: 575.98px) {
+            .content .navbar .navbar-nav .nav-link {
+                margin-left: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+        <!---- Sidebar Start ---->
+        <div class="sidebar">
+            <div class="logo">
+                <ul id="sidebar">
+                    <li>
+                        <div class="profile-element">
+                            <span class="d-flex align-items-center gap-4">
+                                <img class="" src="/assets/images/web-title-logo.png" alt="">
+                                <h2 class="mt-2">MAMCE</h2>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="mt-8">
+                        <a href="">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-item">Demo</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-item">Demo</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-item">Demo</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!---- Sidebar End ---->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control border-0" type="search" placeholder="Search">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="btn px-4 py-2 me-2" style="background-color: #2f4050;">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-white me-1"></i>
+                        <a href="" class="text-white" style="text-decoration: none;">Website</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle" src="/assets/images/web-title-logo.png" alt=""
+                                style="width: 40px; height: 40px;">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">Demo</a>
+                            <a href="#" class="dropdown-item">Demo</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- Main Content -->
+
+
+        </div>
+        <!-- Content End -->
+
+    </div>
+
+    <!-- Template Javascript -->
+    <script src="/assets/js/fastbootstrap.min.js"></script>
+</body>
+
+</html>
